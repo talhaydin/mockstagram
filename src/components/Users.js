@@ -1,8 +1,9 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import './Users.scss';
+import { Link } from 'react-router-dom';
 
-function Users() {
+function Users({ match }) {
   const [users, setUsers] = useState([]);
   useEffect(() => {
     fetch('https://dummyapi.io/data/v1/user?limit=10', {
@@ -13,7 +14,6 @@ function Users() {
       .then((response) => response.json())
       .then((data) => setUsers(data.data));
   }, []);
-  console.log(users);
 
   return (
     <div className="userContainer">
@@ -25,7 +25,10 @@ function Users() {
             alt="user profile pic"
           />
           <h4>
-            {user.title.toUpperCase()}. {user.firstName} {user.lastName}
+            <Link to={`/users/${user.id}`}>
+              {' '}
+              {user.title.toUpperCase()}. {user.firstName} {user.lastName}
+            </Link>
           </h4>
           <h4>{user.id}</h4>
         </div>
