@@ -7,8 +7,18 @@ function Header() {
   return (
     <div>
       <nav className="navMenu">
-        <img src={atomic} className="logo" alt="logo" />
-        <Link to="/Users">Users</Link>
+        <div className>
+          <Link to="/">
+            {' '}
+            <img src={atomic} className="logo" alt="logo" />
+          </Link>
+          <span>Mockstagram</span>
+        </div>
+        <span className="navButton">
+          <Link to="/users">
+            <button>Users</button>
+          </Link>
+        </span>
       </nav>
     </div>
   );
