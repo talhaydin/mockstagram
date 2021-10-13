@@ -1,0 +1,21 @@
+.detailContainer {
+  width: 80%;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 10px 1px rgba(168, 158, 168, 1);
+}
+
+.userCard {
+  display: flex;
+  align-items: center;
+  img {
+    width: 150px;
+    height: 80%;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  div {
+    flex: 0 1 32%;
+  }
+}

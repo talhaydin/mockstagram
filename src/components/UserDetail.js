@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import './UserDetail.scss';
 
 function UserDetail({ match }) {
   const [user, setUser] = useState({});
@@ -17,9 +18,29 @@ function UserDetail({ match }) {
   console.log(user);
 
   return (
-    <div className="">
-      <h1>Ben</h1>
-      <h2>{user.firstName}</h2>
+    <div className="detailContainer">
+      <div className="userCard">
+        <div>
+          <img src={user.picture} alt="user pic" />
+        </div>
+        <div>
+          <h3>
+            {user.title}. {user.firstName} {user.lastName}
+          </h3>
+          <h4>Gender: {user.gender}</h4>
+          <h4>Date of Birth: {user.dateOfBirth}</h4>
+          <h4>Register Date: {user.registerDate}</h4>
+          <h4>Email Adress: {user.email}</h4>
+          <h4>Phone: {user.phone}</h4>
+        </div>
+        <div>
+          <h3>Adress:</h3>
+          <h4>
+            {user.location.street}, {user.location.city}, {user.location.state},
+            {user.location.country}
+          </h4>
+        </div>
+      </div>
     </div>
   );
 }
