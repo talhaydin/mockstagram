@@ -34,11 +34,7 @@ function UserDetail({ match }) {
           <h4>Phone: {user.phone}</h4>
         </div>
         <div>
-          <h3>Adress:</h3>
-          <h4>
-            {user.location.street}, {user.location.city}, {user.location.state},
-            {user.location.country}
-          </h4>
+          <div className="mockMap">Map here</div>
         </div>
       </div>
     </div>

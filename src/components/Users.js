@@ -18,20 +18,20 @@ function Users({ match }) {
   return (
     <div className="userContainer">
       {users.map((user) => (
-        <div className="userCards" key={user.id}>
-          <img
-            src={user.picture}
-            className="userPicture"
-            alt="user profile pic"
-          />
-          <h4>
-            <Link to={`/users/${user.id}`}>
+        <Link to={`/users/${user.id}`}>
+          <div className="userCards" key={user.id}>
+            <img
+              src={user.picture}
+              className="userPicture"
+              alt="user profile pic"
+            />
+            <h4>
               {' '}
               {user.title.toUpperCase()}. {user.firstName} {user.lastName}
-            </Link>
-          </h4>
-          <h4>{user.id}</h4>
-        </div>
+            </h4>
+            <h4>{user.id}</h4>
+          </div>
+        </Link>
       ))}
     </div>
   );
