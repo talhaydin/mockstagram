@@ -1,0 +1,20 @@
+.userContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+.userCards {
+  flex: 0 1 20%;
+  padding: 8px;
+  margin: 20px;
+  box-shadow: 0px 0px 10px 1px rgba(168, 158, 168, 1);
+}
+
+.userPicture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
