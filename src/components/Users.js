@@ -18,7 +18,7 @@ function Users({ match }) {
   return (
     <div className="userContainer">
       {users.map((user) => (
-        <Link to={`/users/${user.id}`}>
+        <Link to={`/users/${user.id}`} key={user.id}>
           <div className="userCards" key={user.id}>
             <img
               src={user.picture}

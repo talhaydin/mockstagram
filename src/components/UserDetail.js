@@ -15,8 +15,6 @@ function UserDetail({ match }) {
       .then((data) => setUser(data));
   }, []);
 
-  console.log(user);
-
   return (
     <div className="detailContainer">
       <div className="userCard">
