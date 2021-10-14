@@ -3,6 +3,8 @@ import './Header.scss';
 import atomic from '../assets/atomic.svg';
 import { Link } from 'react-router-dom';
 
+// static header, clicking on the logo of the application
+// sends the user back to homepage, to ensure friendliness of ai
 function Header() {
   return (
     <div>

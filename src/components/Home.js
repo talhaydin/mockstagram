@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 function Home() {
   const [posts, setPosts] = useState([]);
 
+  // Fetching post data on landing page
   useEffect(() => {
     fetch('https://dummyapi.io/data/v1/post?limit=10', {
       headers: {
@@ -16,6 +17,7 @@ function Home() {
       .then((data) => setPosts(data.data));
   }, []);
 
+  //Displaying posts on landing page
   return (
     <div className="postContainer">
       {posts.map((item) => (

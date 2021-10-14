@@ -5,6 +5,7 @@ import Users from './components/Users';
 import UserDetail from './components/UserDetail';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+// Routing structure, dynamic routing on UserDetail component
 function App() {
   return (
     <div className="App">

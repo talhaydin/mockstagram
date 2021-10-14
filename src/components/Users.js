@@ -12,7 +12,7 @@ function Users({ match }) {
       },
     })
       .then((response) => response.json())
-      .then((data) => setUsers(data.data));
+      .then((data) => setUsers(data.data)); //this part is data.data because the array has data array inside of its array.
   }, []);
 
   return (
