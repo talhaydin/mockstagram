@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import './Home.scss';
 import { Link } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
 
 function Home() {
   const [posts, setPosts] = useState([]);
@@ -34,7 +35,7 @@ function Home() {
           <img src={item.image} alt="post img" className="postImage" />
           <h4>{item.text}</h4>
           {item.tags.map((item) => (
-            <button className="tagBtn" key={item.id}>
+            <button className="tagBtn" key={uuidv4()}>
               {item}
             </button>
           ))}
