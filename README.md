@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Demo
 
-Try it [here!](https://mockstagram.netlify.app)
+Try it [here!](https://mockstagramm.netlify.app/)
 
 ## Technologies Used
 
