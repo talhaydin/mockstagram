@@ -31,6 +31,11 @@ function Home() {
 
           <img src={item.image} alt="post img" className="postImage" />
           <h4>{item.text}</h4>
+          {item.tags.map((item) => (
+            <button className="tagBtn" key={item.id}>
+              {item}
+            </button>
+          ))}
           <h4>❤️{item.likes} Likes</h4>
           <p>{item.publishDate}</p>
         </div>

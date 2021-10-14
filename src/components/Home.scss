@@ -4,11 +4,20 @@
   justify-content: space-between;
   width: 76%;
   margin: auto;
+  .tagBtn {
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: #e1306c;
+    font-weight: 600;
+    border: none;
+  }
 }
 
 .postCards {
   padding: 10px;
-  min-height: 500px;
+  min-height: 640px;
   flex: 0 1 30%;
   margin: 5px;
   box-shadow: 0px 0px 10px 1px rgba(168, 158, 168, 1);
