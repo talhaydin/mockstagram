@@ -2,15 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 80%;
+  width: 76%;
   margin: auto;
 }
 
 .postCards {
   padding: 10px;
   min-height: 500px;
-  flex: 0 1 25%;
-  margin: 10px;
+  flex: 0 1 30%;
+  margin: 5px;
   box-shadow: 0px 0px 10px 1px rgba(168, 158, 168, 1);
   border-radius: 10px;
 }
@@ -33,13 +33,6 @@
   }
 }
 
-@media screen and (max-width: 1700px) {
-  .postCards {
-    flex: 0 1 30%;
-    margin: 5px;
-  }
-}
-
 @media screen and (max-width: 1500px) {
   .postCards {
     flex: 0 1 44%;
@@ -50,6 +43,6 @@
 @media screen and (max-width: 650px) {
   .postCards {
     flex: 0 1 100%;
-    margin: 5px;
+    margin: 10px;
   }
 }
